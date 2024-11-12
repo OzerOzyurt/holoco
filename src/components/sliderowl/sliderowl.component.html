@@ -1,4 +1,4 @@
-<div class="bg-[#F5F0EA] h-[70%] p-14">
+<div class="bg-[#F5F0EA] h-[70%] md:h-[80%]  p-5 md:p-14">
     <div class="container mx-auto  ">
         <div class="row ">
             <div class="col-10 offset-1 ">
@@ -10,7 +10,7 @@
                     <ng-template carouselSlide [id]="item.id" [width]="item.width" class="bg-white rounded-3xl">
                         <div
                             class="slider mx-auto flex justify-center items-center flex-col m-5 p-8 rounded-3xl bg-white ">
-                            <img class="max-h-[6rem] md:max-h-[18.5rem] rounded-xl p-[20px]" [src]="item.img"
+                            <img class="max-h-[14rem] md:max-h-[18.5rem] rounded-xl p-[20px]" [src]="item.img"
                                 alt="{{ item.subtext }}">
                             <span class="font-semibold mt-2 block text-lg text-[#513826]">{{item.subtext}}</span>
                             <!-- <span class="font-light block mt-2 text-sm">{{item.subtext}}</span> -->
@@ -40,7 +40,7 @@
     
         </div> -->
     </div>
-    <div class="flex justify-between">
+    <div class="flex justify-between mt-3 md:mt-8 gap-3">
         <span class="block albtn">AMAZON MAĞAZAMIZI ZİYARET ET</span>
         <span class="block albtn">TRENDYOL MAĞAZAMIZI ZİYARET ET</span>
     </div>
