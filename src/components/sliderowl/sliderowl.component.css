@@ -1,0 +1,60 @@
+.slider {
+    height: auto;
+    border-right: 1px solid #fff;
+    background-color: rgba(#000, 0.2);
+    text-align: center;
+    padding: 26px 15px 40px 15px;
+  }
+  .slider:hover {
+    box-shadow: 0 0 5px 5px #f3f3f3;
+  }
+  
+  
+  ::ng-deep .owl-theme .owl-dots .owl-dot span {
+    background: pink !important;
+    width: 40px !important;
+  }
+  
+  .owl-theme .owl-dots .owl-dot.active span,
+  .owl-theme .owl-dots .owl-dot:hover span {
+    background: red !important;
+  }
+  .btn {
+    color: #b89d64 ;
+    border: solid 1px;
+    padding: 10px;
+    display: flex;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .btn:hover {
+    background-color: #b89d64;
+    color: #fff;
+  }
+  .price {
+    color: #ba9e64;
+
+  }
+
+  .satinalbutton {
+    background-color: #b89d64;
+    padding: .625rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    gap: 5px;
+    margin-top: 20px;
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .albtn {
+    color: #513826;
+    border: #513826 solid 1px;
+    padding: 10px 150px;
+    border-radius: .9375rem;
+    font-size: 1.25rem;
+  }

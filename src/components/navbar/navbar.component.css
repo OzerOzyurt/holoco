@@ -1,0 +1,75 @@
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-icon {
+    position: absolute;
+    left: .625rem;
+    pointer-events: none;
+}
+
+input {
+    padding-left: 3.125rem;
+    background-color: #f0f0f0;
+    padding-top: .625rem;
+    padding-bottom: .625rem;
+    border-radius: 1rem;
+}
+
+input:focus {
+    outline: none;
+}
+
+.anaicon {
+    background-color: #181616;   
+    border-radius: 4px;    
+    padding: 5px;   
+    color: #fff;    
+    margin-left: .3125rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 2.25rem;
+}
+.whatsapp {
+    border: 1px solid;
+    padding: 0 .625rem
+}
+.kalpsvg {
+  font-size: 30px;
+  color: #91699c;
+  position: relative;  
+  background: rgba(246,151,51,.2);
+  color: #f69733;
+  height: 35px;
+  width: 35px;
+  display: flex;  
+  border-radius: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+    background-color: rgb(133 76 51 / 95%)!important;;
+    color: #fff;
+}
+.mobilnavbar {
+    background-color: rgb(133 76 51 / 95%)!important;;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+}
+.matmenu  {
+    color: #fff;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+   padding: 10px;
+}
+::ng-deep .mat-mdc-menu-content {
+    background-color: rgb(133 76 51 / 95%)!important;
+}

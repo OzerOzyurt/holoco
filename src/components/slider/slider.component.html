@@ -1,0 +1,112 @@
+<!-- <div class="coffee-slider" (click)="togglePopup()">
+    <div class="flex  items-center justify-between mb-4">
+        <mat-icon (click)="prevSlide()" class="cursor-pointer text-5xl !h-full !w-9">keyboard_arrow_left</mat-icon>
+        <span class="mx-4 text-5xl">{{ selectedType | titlecase }} Coffee</span>
+        <mat-icon (click)="nextSlide()" class="cursor-pointer text-5xl !h-full !w-9">keyboard_arrow_right</mat-icon>
+    </div>
+
+    <div class="coffee-items">
+        <div *ngFor="let slide of coffeeSlides[selectedType]" class="coffee-item">
+            <img [src]="slide.img" alt="{{ slide.title }}">
+            <h3>{{ slide.title }}</h3>
+            <p>{{ slide.description }}</p>
+        </div>
+    </div>
+</div>
+
+<div #popupElement class="popup" [style.display]="isPopupVisible ? 'block' : 'none'">
+    <div class="popup-content" (click)="$event.stopPropagation()">
+        <span class="close" (click)="togglePopup()">&times;</span>
+        <div class="flex items-center justify-between mb-4">
+            <mat-icon (click)="prevSlide()" class="cursor-pointer text-5xl !h-full !w-9">keyboard_arrow_left</mat-icon>
+            <span class="mx-4 text-5xl">{{ selectedType | titlecase }} Coffee</span>
+            <mat-icon (click)="nextSlide()" class="cursor-pointer text-5xl !h-full !w-9">keyboard_arrow_right</mat-icon>
+        </div>
+
+        <div class="coffee-items">
+            <div *ngFor="let slide of coffeeSlides[selectedType]" class="coffee-item">
+                <img [src]="slide.img" alt="{{ slide.title }}">
+                <h3>{{ slide.title }}</h3>
+                <p>{{ slide.description }}</p>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<div class="coffee-slider" (click)="togglePopup()">
+    <div class="flex items-center justify-between mb-6">
+        <mat-icon (click)="prevSlide()" class="cursor-pointer text-5xl !h-full !w-9">keyboard_arrow_left</mat-icon>
+        <span class="mx-4 text-5xl">{{ selectedType | titlecase }} Coffee</span>
+        <mat-icon (click)="nextSlide()" class="cursor-pointer text-5xl !h-full !w-9">keyboard_arrow_right</mat-icon>
+    </div>
+    <div class="coffee-items">
+        <div *ngFor="let slide of coffeeSlides[selectedType]" class="coffee-item">
+            <img [src]="slide.img" alt="{{ slide.title }}" class="max-h-[7.5625rem]">
+            <h3>{{ slide.title }}</h3>
+            <button class="satinalbutton text-white"><mat-icon class="text-white">shopping_cart</mat-icon> {{
+                slide.description
+                }}</button>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="isPopupVisible" class="popup" [ngClass]="{'visible': isPopupVisible}">
+    <div class="popup-content" (click)="$event.stopPropagation()">
+        <span class="close" (click)="togglePopup()">&times;</span>
+        <div class="flex items-center justify-between mb-6 mt-10">
+            <mat-icon (click)="prevSlide()" class="cursor-pointer text-5xl !h-full !w-9">keyboard_arrow_left</mat-icon>
+            <span class="mx-4 text-5xl">{{ selectedType | titlecase }} Coffee</span>
+            <mat-icon (click)="nextSlide()" class="cursor-pointer text-5xl !h-full !w-9">keyboard_arrow_right</mat-icon>
+        </div>
+        <div class="coffee-items">
+            <div *ngFor="let slide of coffeeSlides[selectedType]" class="coffee-item">
+                <img [src]="slide.img" alt="{{ slide.title }}">
+                <h3>{{ slide.title }}</h3>
+                <button class="satinalbutton text-white"><mat-icon class="text-white">shopping_cart</mat-icon> {{
+                    slide.description
+                    }}</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- <div #popupElement class="popup">
+    <div class="popup-content">
+        <span class="close" (click)="togglePopup()">&times;</span>
+        <div class="flex items-center justify-between mb-4">
+            <mat-icon (click)="prevSlide()" class="cursor-pointer text-5xl !h-full !w-9">keyboard_arrow_left</mat-icon>
+            <span class="mx-4 text-5xl">{{ selectedType | titlecase }} Coffee</span>
+            <mat-icon (click)="nextSlide()" class="cursor-pointer text-5xl !h-full !w-9">keyboard_arrow_right</mat-icon>
+        </div>
+
+        <div class="coffee-items">
+            <div *ngFor="let slide of coffeeSlides[selectedType]" class="coffee-item">
+                <img [src]="slide.img" alt="{{ slide.title }}">
+                <h3>{{ slide.title }}</h3>
+                <p>{{ slide.description }}</p>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<!-- <div #popupElement class="popup" [style.display]="isPopupVisible ? 'block' : 'none'">
+    <div class="popup-content" (click)="$event.stopPropagation()">
+        <span class="close" (click)="togglePopup()">&times;</span>
+        <div class="flex items-center justify-between mb-4">
+            <mat-icon class="cursor-pointer text-5xl !h-full !w-9">keyboard_arrow_left</mat-icon>
+            <span class="mx-4 text-5xl">{{ selectedType | titlecase }} Coffee</span>
+            <mat-icon class="cursor-pointer text-5xl !h-full !w-9">keyboard_arrow_right</mat-icon>
+        </div>
+
+        <div class="coffee-items">
+            <div *ngFor="let slide of coffeeSlides[selectedType]" class="coffee-item">
+                <img [src]="slide.img" alt="{{ slide.title }}">
+                <h3>{{ slide.title }}</h3>
+                <p>{{ slide.description }}</p>
+            </div>
+        </div>
+    </div>
+</div> -->

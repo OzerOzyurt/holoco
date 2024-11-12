@@ -1,0 +1,127 @@
+.coffee-slider {
+  padding: 1.25rem; 
+}
+
+.coffee-items {
+  display: flex; 
+  overflow-x: auto; 
+}
+
+.coffee-item {
+  margin: .625rem; 
+  text-align: center; 
+  width: 18.75rem; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.coffee-item img {
+  width: 100%; 
+  height: auto;
+  
+}
+
+/* Pop-up varsayılan olarak gizli */
+/* .popup {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-content {
+  position: relative;
+  margin: 10% auto;
+  padding: 20px;
+  background: white;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 8px;
+}
+
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+} */
+
+
+/* Pop-up varsayılan olarak gizli */
+
+
+/* Pop-up görünür olduğunda göster */
+/* .popup.show {
+  display: block;
+}
+
+.popup-content {
+  position: relative;
+  margin: 10% auto;
+  padding: 20px;
+  background: white;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 8px;
+}
+
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+} */
+
+.popup {
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.popup.visible {
+  display: block;
+}
+
+.popup-content {
+  position: relative;
+  margin: 15% auto;
+  padding: 1.25rem;
+  background: white;
+  width: 80%;
+  max-width: 100rem;
+  border-radius: 0.5rem;
+}
+
+.close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.satinalbutton {
+  background-color: #b89d64;
+  padding: .625rem;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
