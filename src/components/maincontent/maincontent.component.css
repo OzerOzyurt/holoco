@@ -12,7 +12,8 @@
     height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-left: 1.25rem;
+    /* margin-left: 1.25rem; */
+    background-position: center;
 }
 .marquee {
     height: 250px; 
