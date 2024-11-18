@@ -1,8 +1,7 @@
-<div class="bg-[#F5F0EA]  p-5 md:p-14">
-    <div class="container mx-auto  ">
+<div class="bg-[#F5F0EA] overflow-visible p-5 md:p-0 md:py-14">
+    <div class=" mx-auto overflow-visible">
         <div class="row ">
             <div class="col-10 offset-1 ">
-
                 <owl-carousel-o [options]="customOptions" (translated)="getPassedData($event)"
                     (change)="getChangeData($event)" (changed)="getChangedData($event)" #owlCar class="flex gap-9">
 
@@ -10,14 +9,13 @@
                     <ng-template carouselSlide [id]="item.id" [width]="item.width" class="bg-white rounded-3xl">
                         <div
                             class="slider mx-auto flex justify-center items-center flex-col m-5 p-8 rounded-3xl bg-white ">
-                            <img class="max-h-[14rem] md:max-h-[18.5rem] rounded-xl p-[20px]" [src]="item.img"
+                            <img class="max-h-[20rem] md:max-h-[24.5rem] rounded-xl p-[20px]" [src]="item.img"
                                 alt="{{ item.subtext }}">
                             <span class="font-semibold mt-2 block text-lg text-[#513826]">{{item.subtext}}</span>
                             <!-- <span class="font-light block mt-2 text-sm">{{item.subtext}}</span> -->
                             <span class="price mt-4 font-extrabold text-2xl">{{item.price}}</span>
                             <!-- <button class="satinalbutton"><mat-icon class="text-white">shopping_cart</mat-icon>
                                 {{item.description}}</button> -->
-
                         </div>
                     </ng-template>
                     }
@@ -40,7 +38,7 @@
     
         </div> -->
     </div>
-    <div class="flex justify-between mt-3 md:mt-8 gap-3">
+    <div class="flex justify-between mt-3 md:mt-8 md:px-5 gap-3">
         <span class="block albtn">AMAZON MAĞAZAMIZI ZİYARET ET</span>
         <span class="block albtn">TRENDYOL MAĞAZAMIZI ZİYARET ET</span>
     </div>

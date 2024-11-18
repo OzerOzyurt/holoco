@@ -35,8 +35,8 @@ input:focus {
     width: 2.25rem;
 }
 .whatsapp {
-    border: 1px solid;
-    padding: 0 .625rem
+    /* border: 1px solid; */
+    /* padding: 0 .625rem */
 }
 .kalpsvg {
   font-size: 30px;

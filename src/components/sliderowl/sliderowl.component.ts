@@ -15,7 +15,7 @@ export class SliderowlComponent {
   customOptions: OwlOptions = {
     loop: true,
     mouseDrag: true,
-    touchDrag: false,
+    touchDrag: true,
     pullDrag: false,
     dots: false,
     navSpeed: 700,
@@ -32,7 +32,7 @@ export class SliderowlComponent {
         items: 3
       },
       940: {
-        items: 4
+        items: 5
       }
     },
     nav: false
@@ -52,16 +52,16 @@ export class SliderowlComponent {
   ]
 
   carouselData: WritableSignal<CarouselData[]> = signal([
-    { id: 'slide-1', text: 'Açıklama', img: "assets/slider/mirela1000.jpeg",subtext: 'Mirela ', price:'1000g', dataMerge: 2, width: 210, dotContent: 'text1',   description: 'metin'  },
-    { id: 'slide-2', text: 'Açıklama', img: "assets/slider/private1000.jpeg",subtext: 'Private ', price:'1000g', dataMerge: 2, width: 210, dotContent: 'text1',   description: 'metin'  },
-    { id: 'slide-3', text: 'Açıklama', img: "assets/slider/public1000.jpeg",subtext: 'Public ', price:'1000g', dataMerge: 2, width: 210, dotContent: 'text1',   description: 'metin'  },
-    { id: 'slide-4', text: 'Açıklama', img: "assets/slider/tangle1000.jpeg",subtext: 'Tangle ', price:'1000g', dataMerge: 2, width: 210, dotContent: 'text1',   description: 'metin'  },
-    { id: 'slide-5', text: 'Açıklama', img: "assets/slider/terra1000.jpeg",subtext: 'Terra', price:'1000g', dataMerge: 2, width: 210, dotContent: 'text1',   description: 'metin'  },
-    { id: 'slide-6', text: 'Açıklama', img: "assets/slider/mirela500.jpeg",subtext: 'Mirela', price:'500g', dataMerge: 2, width: 210, dotContent: 'text1',   description: 'metin'  },
-    { id: 'slide-7', text: 'Açıklama', img: "assets/slider/private500.jpeg",subtext: 'Private', price:'500g', dataMerge: 2, width: 210, dotContent: 'text1',   description: 'metin'  },
-    { id: 'slide-8', text: 'Açıklama', img: "assets/slider/public500.jpeg",subtext: 'Public', price:'500g', dataMerge: 2, width: 210, dotContent: 'text1',   description: 'metin'  },
-    { id: 'slide-9', text: 'Açıklama', img: "assets/slider/tangle500.jpeg",subtext: 'Tangle', price:'500g', dataMerge: 2, width: 210, dotContent: 'text1',   description: 'metin'  },
-    { id: 'slide-10', text: 'Açıklama', img: "assets/slider/terra500.jpeg",subtext: 'Terra', price:'500g', dataMerge: 2, width: 210, dotContent: 'text1',   description: 'metin'  },
+    { id: 'slide-1', text: 'Açıklama', img: "assets/slider/mirella1kg.jpg",subtext: 'Mirela ', price:'1000g', dataMerge: 2, width: 210, dotContent: 'text1',   description: 'metin'  },
+    { id: 'slide-2', text: 'Açıklama', img: "assets/slider/private1kg.jpg",subtext: 'Private ', price:'1000g', dataMerge: 2, width: 210, dotContent: 'text1',   description: 'metin'  },
+    { id: 'slide-3', text: 'Açıklama', img: "assets/slider/public1kg.jpg",subtext: 'Public ', price:'1000g', dataMerge: 2, width: 210, dotContent: 'text1',   description: 'metin'  },
+    { id: 'slide-4', text: 'Açıklama', img: "assets/slider/tangle1kg.jpg",subtext: 'Tangle ', price:'1000g', dataMerge: 2, width: 210, dotContent: 'text1',   description: 'metin'  },
+    { id: 'slide-5', text: 'Açıklama', img: "assets/slider/terra1kg.jpg",subtext: 'Terra', price:'1000g', dataMerge: 2, width: 210, dotContent: 'text1',   description: 'metin'  },
+    { id: 'slide-6', text: 'Açıklama', img: "assets/slider/mirella500gr.jpg",subtext: 'Mirela', price:'500g', dataMerge: 2, width: 210, dotContent: 'text1',   description: 'metin'  },
+    { id: 'slide-7', text: 'Açıklama', img: "assets/slider/private500gr.jpg",subtext: 'Private', price:'500g', dataMerge: 2, width: 210, dotContent: 'text1',   description: 'metin'  },
+    { id: 'slide-8', text: 'Açıklama', img: "assets/slider/public500gr.jpg",subtext: 'Public', price:'500g', dataMerge: 2, width: 210, dotContent: 'text1',   description: 'metin'  },
+    { id: 'slide-9', text: 'Açıklama', img: "assets/slider/tangle500gr.jpg",subtext: 'Tangle', price:'500g', dataMerge: 2, width: 210, dotContent: 'text1',   description: 'metin'  },
+    { id: 'slide-10', text: 'Açıklama', img: "assets/slider/terra500gr.jpg",subtext: 'Terra', price:'500g', dataMerge: 2, width: 210, dotContent: 'text1',   description: 'metin'  },
    
     // { id: 'slide-7', text: 'Slide 7', dotContent: 'text5'},
     // { id: 'slide-8', text: 'Slide 8', dotContent: 'text5'},
