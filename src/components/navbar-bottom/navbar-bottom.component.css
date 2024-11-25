@@ -1,7 +1,8 @@
 .barista {
-    background-image: url("../../assets/herofix.png");
+    /* background-image: url("../../assets/herofix.png"); */
     width: 100%;
-    height: 70vh;    
+    max-height: 70dvh;
+      
     background-repeat: no-repeat;
     background-size: cover;
     background-clip: content-box;    
