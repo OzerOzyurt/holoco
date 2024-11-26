@@ -26,12 +26,12 @@
     width: 200%;    
     position: absolute;
     overflow: hidden;  
-    animation: marquee 10s linear infinite;
+    animation: marquee 25s linear infinite;
   }
   
   .marquee .marqimg {
     float: left;
-    width: 100%;
+    max-width: none;
   }
   
   @keyframes marquee {
@@ -46,7 +46,7 @@
 
   .marquee2 .marqimg2 {
     float: right;
-    width: 100%;
+    max-width: none;
   }
 
   .marquee2 .marqright {
@@ -54,7 +54,7 @@
     width: 200%;    
     position: absolute;
     overflow: hidden;  
-    animation: marq 15s linear infinite;
+    animation: marq 25s linear infinite;
   }
   @keyframes marq {
     0% { right: 0; }
