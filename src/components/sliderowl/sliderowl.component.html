@@ -1,9 +1,11 @@
 <div class="bg-[#F5F0EA] overflow-visible p-5 md:p-0 md:py-8">
     <div class=" mx-auto overflow-visible">
-        <div class="row md:px-4">
-            <span
-                class="text-center block text-[#513826] text-3xl md:text-[2.25rem] md:leading-[4rem]  px-8">Ürünlerimiz</span>
-            <span class="cizgi mx-auto mb-8"></span>
+        <div class="row flex flex-col md:px-4">
+            <div class="text-center block text-[#513826] text-3xl md:text-[2.25rem] md:leading-[4rem] mx-auto px-8">
+                Ürünlerimiz
+                <span class="cizgi  mb-8 -mx-2"></span>
+            </div>
+
             <div class="col-10 offset-1 ">
                 <owl-carousel-o [options]="customOptions" (translated)="getPassedData($event)"
                     (change)="getChangeData($event)" (changed)="getChangedData($event)" #owlCar class="flex gap-9">
@@ -11,8 +13,8 @@
                     @for (item of carouselData(); track item.id) {
                     <ng-template carouselSlide [id]="item.id" [width]="item.width" class="bg-white rounded-3xl">
                         <div
-                            class="slider mx-auto flex justify-center items-center flex-col m-5 p-8 rounded-3xl bg-white ">
-                            <img class="max-h-[20rem] md:max-h-[24.5rem] borderad p-[20px]" [src]="item.img"
+                            class="slider mx-auto flex justify-center items-center flex-col m-5 p-0 !pt-0 rounded-lg bg-white overflow-hidden">
+                            <img class="max-h-[20rem] md:max-h-[24.5rem]  p-0" [src]="item.img"
                                 alt="{{ item.subtext }}">
                             <span class="font-semibold mt-2 block text-lg text-[#513826]">{{item.subtext}}</span>
                             <!-- <span class="font-light block mt-2 text-sm">{{item.subtext}}</span> -->
@@ -47,11 +49,11 @@
     </div> -->
     <div class="grid grid-cols-2  mt-6 md:mt-12 md:px-5 gap-3">
         <span class="flex flex-col items-center ">
-            <img src="assets/logolar/amazon.svg" class="w-[50%] md:w-[15%]  mb-2 cursor-pointer" alt="">
+            <img src="assets/logolar/amazon.svg" class="w-[50%] md:w-[13%]  mb-2 cursor-pointer" alt="">
             <span class="md:block hidden albtn ">AMAZON MAĞAZAMIZ</span>
         </span>
         <span class="flex flex-col items-center">
-            <img src="assets/logolar/trendyol.png" class="w-[50%] md:w-[20%] mb-2 cursor-pointer" alt="">
+            <img src="assets/logolar/trendyol.png" class="w-[50%] md:w-[17%] mb-2 cursor-pointer" alt="">
             <span class="md:block hidden albtn">TRENDYOL MAĞAZAMIZ</span>
         </span>
     </div>

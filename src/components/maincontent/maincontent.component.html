@@ -165,40 +165,49 @@
 </div>
 
 <div class="mt-16 md:px-18 md:py-12 font-sans py-4 px-3 bg-[#F5F0EA]">
-    <p class="text-5xl font-serif text-[#b89d64]">Holoco'dan Haberler</p>
+    <p class="text-2xl md:text-3xl font-serif text-center md:text-start text-[#b89d64]">Holoco'dan Haberler</p>
     <div class="grid md:grid-cols-3 gap-4 font-serif">
-        <div class="flex flex-col items-start bg-white p-4 shadow-md rounded">
+        <div class="flex flex-col items-start bg-white  shadow-md rounded-lg overflow-hidden">
             <img src="../../assets/haberler/3ton.png" alt="Image 1" class="w-full  rounded mb-2">
-            <span class="font-bold block md:my-4 text-xl font-serif text-[#b89d64]">Holoco IZTV Haberi
-            </span>
-            <p class="text-sm mt-2">
-                İzmir merkezli şirket Türkiye'nin dört bir yanına ürünlerini müşterilerine tedarik etmeyi
-                hedeflemektedir. Üretimini ve satışını üstlendikleri tüm ürünleri kendi oluşturduktan dağıtım ve
-                organizasyon ağı ile firma bünyesinde yapıyorlar. Aynı zaman da firmaların -18 taşımalarınızda
-                üstlenmekteler.
-            </p>
+            <div class="px-4">
+                <span class="font-bold block md:my-4 text-xl font-serif text-[#b89d64]">Holoco IZTV Haberi
+                </span>
+                <p class="text-sm mt-2">
+                    İzmir merkezli şirket Türkiye'nin dört bir yanına ürünlerini müşterilerine tedarik etmeyi
+                    hedeflemektedir. Üretimini ve satışını üstlendikleri tüm ürünleri kendi oluşturduktan dağıtım ve
+                    organizasyon ağı ile firma bünyesinde yapıyorlar. Aynı zaman da firmaların -18 taşımalarınızda
+                    üstlenmekteler.
+                </p>
+            </div>
             <!-- <button class="mt-4 font-bold py-2 rounded text-[#b89d64]" (click)="togglePopup()">Read More</button> -->
         </div>
-        <div class="flex flex-col items-start bg-white p-4 shadow-md rounded">
+        <div class="flex flex-col items-start bg-white  shadow-md rounded-lg overflow-hidden">
             <img src="assets/haberler/15bin.jpg" alt="Image 2" class="w-full h-auto  rounded mb-2">
-            <span class="font-bold text-xl md:my-4 text-[#b89d64]">İzmir Kahve Fuarı</span>
-            <p class="text-sm mt-2">
-                Holoco, düzenlenen fuarda kahve severlere unutulmaz bir deneyim yasattı. Standında ziyaretçileri
-                ağırlayan firma, etkinlik boyunca tam 15.000 fincan kahve ikram ederek büyük ilgi topladı. Yüksek
-                kaliteli kahveleriyle dikkat çeken Holoco, hem lezzeti hem de misafirperverliğiyle fuarın en çok
-                konuşulan markalarından biri oldu.
-            </p>
+            <div class="px-4">
+                <span class="font-bold text-xl block md:my-4 text-[#b89d64]">İzmir Kahve Fuarı</span>
+                <p class="text-sm mt-2">
+                    Holoco, düzenlenen fuarda kahve severlere unutulmaz bir deneyim yasattı. Standında ziyaretçileri
+                    ağırlayan firma, etkinlik boyunca tam 15.000 fincan kahve ikram ederek büyük ilgi topladı. Yüksek
+                    kaliteli kahveleriyle dikkat çeken Holoco, hem lezzeti hem de misafirperverliğiyle fuarın en çok
+                    konuşulan markalarından biri oldu.
+                </p>
+            </div>
+
             <!-- <button class="mt-4   font-bold py-2 rounded text-[#b89d64]" (click)="togglePopup()">Read More</button> -->
         </div>
 
-        <div class="flex flex-col items-start bg-white p-4 shadow-md rounded">
-            <img src="../../assets/haberler/kent.jpg" alt="Image 3" class="w-full h-auto rounded mb-2">
-            <span class="font-bold block md:my-4 text-xl text-[#b89d64]">Kahve Kavurma Atölyemiz </span>
-            <p class="text-sm mt-2">
-                İzmir Işıkkent'te yeni kavurma atölyemizi hizmete açtık. Lezzetlerimizi modern üretim teknikleriyle
-                müşterilerimize sunmayı hedefliyoruz. Atölyemiz, bölge ekonomisine katkı sağlamanın yanı sıra istihdam
-                imkânları da yaratacak. Ürettiğimiz ürünler, Türkiye’nin dört bir yanına ulaşacak.
-            </p>
+        <div class="flex flex-col items-start bg-white shadow-md rounded-lg overflow-hidden">
+            <img src="../../assets/haberler/kent3.jpg" alt="Image 3" class="w-full h-auto rounded mb-2">
+            <div class="px-4">
+                <span class="font-bold block md:my-4 text-xl text-[#b89d64]">Kahve Kavurma Atölyemiz </span>
+                <p class="text-sm mt-2">
+                    İzmir Işıkkent'te yeni kavurma atölyemizi hizmete açtık. Lezzetlerimizi modern üretim teknikleriyle
+                    müşterilerimize sunmayı hedefliyoruz. Atölyemiz, bölge ekonomisine katkı sağlamanın yanı sıra
+                    istihdam
+                    imkânları da yaratacak. Ürettiğimiz ürünler, Türkiye’nin dört bir yanına ulaşacak.
+                </p>
+            </div>
+
             <!-- <button class="mt-4   font-bold py-2  rounded text-[#b89d64]" (click)="togglePopup()">Read More</button> -->
         </div>
     </div>
@@ -235,7 +244,7 @@
 <div class="md:px-12 font-sans px-3 mt-20">
     <div class="grid md:grid-cols-2 gap-4">
         <div class="flex flex-col md:justify-center">
-            <span class="font-serif text-4xl md:text-5xl block text-center mb-8 text-[#b89d64]">Logistik
+            <span class="font-serif text-2xl md:text-3xl block text-center mb-8 text-[#b89d64]">Lojistik
                 Hizmetlerimiz</span>
             <p class="mb-2 font-sans">
                 Biz, yurtiçi parsiyel taşımacılık hizmeti sunan ve müşteri odaklı yaklaşımımızla kazan-kazan anlayışını
@@ -259,11 +268,30 @@
         </div>
     </div>
 
-    <div class="marquee">
+    <!-- <div class="marquee">
         <div>
             <img class="h-[13.75rem] !max-w-[auto] marqimg" src="../../assets/kayanresim.png">
         </div>
+    </div> -->
+    <div>
+        <div class="relative no-scrollbar flex overflow-hidden snap-x snap-mandatory gap-0 ">
+            <div #animateRefTmp2
+                class="flex flex-nowrap gap-5 md:gap-10 overflow-visible items-center w-full min-w-full">
+
+                <img class="snap-start max-h-[100px] h-[100px] min-h-[100px] md:max-h-[180px] md:h-[180px] md:min-h-[180px] max-w-none object-contain"
+                    src="../../assets/kayanresim.png" />
+
+            </div>
+            <div #animateRefTmp3
+                class="absolute top-0 flex flex-nowrap gap-5 md:gap-10 overflow-visible items-center w-full min-w-full">
+
+                <img class="snap-start max-h-[100px] h-[100px] min-h-[100px] md:max-h-[180px] md:h-[180px] md:min-h-[180px] w-auto max-w-none object-contain"
+                    src="../../assets/kayanresim.png" />
+
+            </div>
+        </div>
     </div>
+
 
 
 
@@ -284,7 +312,7 @@
 
         <!-- Sağ Taraf -->
         <div class="flex items-center justify-center flex-col ">
-            <span class="font-sans text-4xl md:text-5xl block text-center mb-8 text-[#b89d64]">Fabrikamız</span>
+            <span class="font-sans text-2xl md:text-3xl block text-center mb-8 text-[#b89d64]">Fabrikamız</span>
             <p class="font-sans">
                 Biz, Holoco olarak İzmir’in Torbalı ilçesi Pancar bölgesinde 4000 m² alan üzerine kurulu bardak üretim
                 tesisimizde, yüksek kalite ve hijyen standartlarında üretim yapıyoruz. 4 oz, 8 oz, 14 oz ve 16 oz
@@ -299,14 +327,14 @@
 
     <div class="grid md:grid-cols-2 gap-4 mt-12">
         <div class="flex  md:justify-center flex-col">
-            <span class="font-serif text-4xl md:text-5xl block text-center mb-8 text-[#b89d64]">Holoco Gıda İş Ortaklığı
+            <span class="font-serif text-2xl md:text-3xl block text-center mb-8 text-[#b89d64]">Holoco Gıda İş Ortaklığı
             </span>
             <p class="mb-2 font-sans">
                 Kahve ve coffee shop sektörünün yükselen markası Holoco Gıda, Dünya genelinde İş ortaklığı kurmakta.
             </p>
             <span class="block font-sans mb-2">Kendi işinizi kurmak veya mevcut işletmenizi büyütmek için mükemmel bir
                 fırsat! Kaliteli ürünlerimiz, geniş ürün yelpazemiz ve sürekli desteğimizle yanınızdayız.</span>
-            <span class="block font-sans mb-2 text-[#b89d64] text-2xl text-center">Neden Holoco Gıda?</span>
+            <span class="block font-sans mb-2 text-[#b89d64] text-2xl">Neden Holoco Gıda?</span>
             <span class="block font-sans mb-2"><span class="text-[#b89d64] font-semibold">Zengin Ürün Çeşidi:</span>
                 Kahve, şuruplar,
                 barista ekipmanları, ve coffee shop
@@ -344,23 +372,39 @@
             <p class="text-lg mb-1 text-[#b89d64]"></p>
         </div>
     </div>
-    <div>
-        <!-- <div class="marquee2">
+    <!-- <div>
+        <div class="marquee2">
             <div class="marqright">
                 <img class="h-[13.75rem] marqimg2" src="../../assets/kayanresim.png">
             </div>
-        </div> -->
+        </div>
         <div class="marquee">
             <div>
                 <img class="h-[13.75rem] !max-w-[auto] marqimg" src="../../assets/kayanresim.png">
             </div>
         </div>
+    </div> -->
+
+    <div class="relative no-scrollbar flex overflow-hidden snap-x snap-mandatory gap-0 ">
+        <div #animateRefTmp class="flex flex-nowrap gap-5 md:gap-10 overflow-visible items-center w-full min-w-full">
+
+            <img class="snap-start max-h-[100px] h-[100px] min-h-[100px] md:max-h-[180px] md:h-[180px] md:min-h-[180px] max-w-none object-contain"
+                src="../../assets/kayanresim.png" />
+
+        </div>
+        <div #animateRefTmp1
+            class="absolute top-0 flex flex-nowrap gap-5 md:gap-10 overflow-visible items-center w-full min-w-full">
+
+            <img class="snap-start max-h-[100px] h-[100px] min-h-[100px] md:max-h-[180px] md:h-[180px] md:min-h-[180px] w-auto max-w-none object-contain"
+                src="../../assets/kayanresim.png" />
+
+        </div>
     </div>
 
     <div class="">
         <div>
-            <p class="text-4xl md:text-5xl text-[#b89d64]">Sertifikalar</p>
-            <p class="text-3xl text-[#b89d64]">Yeniliklerimizi Keşfedin</p>
+            <p class=" text-2xl md:text-3xl text-[#b89d64]">Sertifikalar</p>
+            <p class="text-2xl  md:text-3xl text-[#b89d64]">Yeniliklerimizi Keşfedin</p>
         </div>
         <div class="grid md:grid-cols-3 gap-4 p-4">
             <div class="flex flex-col items-start bg-gray-200 p-4">
