@@ -12,7 +12,7 @@
                     <ng-template carouselSlide [id]="item.id" [width]="item.width" class="bg-white rounded-3xl">
                         <div
                             class="slider mx-auto flex justify-center items-center flex-col m-5 p-8 rounded-3xl bg-white ">
-                            <img class="max-h-[20rem] md:max-h-[24.5rem] rounded-2xl p-[20px]" [src]="item.img"
+                            <img class="max-h-[20rem] md:max-h-[24.5rem] borderad p-[20px]" [src]="item.img"
                                 alt="{{ item.subtext }}">
                             <span class="font-semibold mt-2 block text-lg text-[#513826]">{{item.subtext}}</span>
                             <!-- <span class="font-light block mt-2 text-sm">{{item.subtext}}</span> -->
@@ -47,11 +47,11 @@
     </div> -->
     <div class="grid grid-cols-2  mt-6 md:mt-24 md:px-5 gap-3">
         <span class="flex flex-col items-center ">
-            <img src="assets/logolar/amazon.svg" class="w-[50%] md:w-[24%] md:h-[40%] mb-2" alt="">
+            <img src="assets/logolar/amazon.svg" class="w-[50%] md:w-[24%]  mb-2 cursor-pointer" alt="">
             <span class="md:block hidden albtn ">AMAZON MAĞAZAMIZ</span>
         </span>
         <span class="flex flex-col items-center">
-            <img src="assets/logolar/trendyol.png" class="w-[50%] md:w-[30%] md:h-[40%] mb-2" alt="">
+            <img src="assets/logolar/trendyol.png" class="w-[50%] md:w-[30%] mb-2 cursor-pointer" alt="">
             <span class="md:block hidden albtn">TRENDYOL MAĞAZAMIZ</span>
         </span>
     </div>

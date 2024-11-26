@@ -40,11 +40,14 @@
 <div class="block md:hidden">
     <div class="flex mobilnavbar  sticky top-0 item md:hidden">
         <a href="/" class="cursor-pointer mx-2">
-            <img class="w-auto h-16" src="/assets/holoco-logo.png" alt="">
+            <img class="w-auto h-16 logoshadow" src="/assets/holoco-logo.png" alt="">
         </a>
-        <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
-            <mat-icon class="text-white">reorder</mat-icon>
-        </button>
+        <div class="flex justify-center items-center">
+            <a href="hakkımızda" class="cursor-pointer">Hakkımızda</a>
+            <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+                <mat-icon class="text-white">reorder</mat-icon>
+            </button>
+        </div>
         <mat-menu class="matmenu" #menu="matMenu">
             <div class="matmenu">
                 <div class="mobilwhatsapp flex items-center gap-1 mr-3">
@@ -66,6 +69,9 @@
                 <div class="flex items-center gap-1 mr-2">
                     <mat-icon>person_add</mat-icon>
                     <button>Giriş Yap</button>
+                </div>
+                <div>
+
                 </div>
                 <!-- <button mat-menu-item>
             <mat-icon>dialpad</mat-icon>

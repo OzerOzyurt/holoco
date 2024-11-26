@@ -83,3 +83,7 @@
     text-align: center;
     
   }
+
+  .borderad {
+    border-radius: 2rem;
+  }

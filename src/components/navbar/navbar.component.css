@@ -54,7 +54,7 @@ input:focus {
     color: #fff;
 }
 .mobilnavbar {
-    background-color: rgb(133 76 51 / 95%)!important;
+    background-color: #000!important;
     color: #fff;
     display: flex;
     align-items: center;
@@ -68,7 +68,7 @@ input:focus {
    padding: 10px;
 }
 ::ng-deep .mat-mdc-menu-content {
-    background-color: rgb(133 76 51 / 95%)!important;
+    background-color: #000!important;
 }
 .logoshadow {
     filter: drop-shadow(0px 0px 2px white);
