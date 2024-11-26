@@ -71,3 +71,15 @@
     }
 
   }
+
+  .cizgi {
+    content: '';    
+    width: 70px;
+    height: 2px;
+    background: #b89d64;
+    /* position: absolute;
+    left: 50%;   */
+    display: block;
+    text-align: center;
+    
+  }

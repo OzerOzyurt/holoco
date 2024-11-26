@@ -53,11 +53,11 @@ input:focus {
 }
 
 .navbar {
-    background-color: rgb(133 76 51 / 95%)!important;;
+    background-color: #b89d65!important;
     color: #fff;
 }
 .mobilnavbar {
-    background-color: rgb(133 76 51 / 95%)!important;;
+    background-color: rgb(133 76 51 / 95%)!important;
     color: #fff;
     display: flex;
     align-items: center;
