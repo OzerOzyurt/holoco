@@ -31,8 +31,8 @@
     </div> <!-- /.container -->
     <div class="flex items-center mt-2 justify-center">
         <span class="flex gap-2">
-            <a class="btn btn-success" (click)="owlCar.prev()"><mat-icon>keyboard_arrow_left</mat-icon> </a>
-            <a class="btn btn-success" (click)="owlCar.next()"><mat-icon>keyboard_arrow_right</mat-icon></a>
+            <a class="btn btn-success rounded-lg" (click)="owlCar.prev()"><mat-icon>keyboard_arrow_left</mat-icon> </a>
+            <a class="btn btn-success rounded-lg" (click)="owlCar.next()"><mat-icon>keyboard_arrow_right</mat-icon></a>
         </span>
         <!-- <p><a class="btn btn-success" (click)="owlCar.to('slide-3')">move to 3th slide</a></p>
         <p><a class="btn btn-success" (click)="removeLastSlide()">Remove the last slide</a></p>
@@ -45,14 +45,14 @@
         <img src="assets/logolar/amazon.svg" class="w-[10%] h-[10%]" alt="">
         <img src="assets/logolar/trendyol.png" class="w-[10%] h-[10%]" alt="">
     </div> -->
-    <div class="grid md:grid-cols-2  mt-3 md:mt-24 md:px-5 gap-3">
+    <div class="grid grid-cols-2  mt-6 md:mt-24 md:px-5 gap-3">
         <span class="flex flex-col items-center ">
-            <img src="assets/logolar/amazon.svg" class="w-[24%] h-[40%] mb-2" alt="">
-            <span class="block albtn">AMAZON MAĞAZAMIZ </span>
+            <img src="assets/logolar/amazon.svg" class="w-[50%] md:w-[24%] md:h-[40%] mb-2" alt="">
+            <span class="md:block hidden albtn ">AMAZON MAĞAZAMIZ</span>
         </span>
         <span class="flex flex-col items-center">
-            <img src="assets/logolar/trendyol.png" class="w-[30%] h-[40%] mb-2" alt="">
-            <span class="block albtn">TRENDYOL MAĞAZAMIZ</span>
+            <img src="assets/logolar/trendyol.png" class="w-[50%] md:w-[30%] md:h-[40%] mb-2" alt="">
+            <span class="md:block hidden albtn">TRENDYOL MAĞAZAMIZ</span>
         </span>
     </div>
 </div>
