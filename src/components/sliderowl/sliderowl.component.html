@@ -14,8 +14,8 @@
                     <ng-template carouselSlide [id]="item.id" [width]="item.width" class="bg-white rounded-3xl">
                         <div
                             class="slider mx-auto flex justify-center items-center flex-col m-5 p-0 !pt-0 rounded-lg bg-white overflow-hidden">
-                            <img class="max-h-[20rem] md:max-h-[24.5rem]  p-0" [src]="item.img"
-                                alt="{{ item.subtext }}">
+                            <img class="max-h-[20rem] md:max-h-[24.5rem]  p-0" (click)="togglePopup(item)"
+                                [src]="item.img" alt="{{ item.subtext }}">
                             <span class="font-semibold mt-2 block text-lg text-[#513826]">{{item.subtext}}</span>
                             <!-- <span class="font-light block mt-2 text-sm">{{item.subtext}}</span> -->
                             <span class="price mt-4 font-extrabold text-2xl">{{item.price}}</span>
@@ -60,5 +60,28 @@
                 <span class="md:block hidden albtn">TRENDYOL MAĞAZAMIZ</span>
             </span>
         </a>
+    </div>
+</div>
+
+<!-- <div *ngIf="selectedItem && selectedItem.status" class="popup" (click)="closePopup()">
+    <div class="popup-content" (click)="$event.stopPropagation()"> <span class="close"
+            (click)="closePopup()">&times;</span>
+        <div [innerHTML]="selectedItem.description"></div>
+    </div>
+</div> -->
+
+<div *ngIf="selectedItem && selectedItem.status" class="popup" (click)="closePopup()">
+    <div class="popup-content" (click)="$event.stopPropagation()">
+        <span class="close" (click)="togglePopup(selectedItem)">&times;</span>
+        <p>{{ selectedItem.id }}'nin durumu: {{ selectedItem.status }}</p>
+        <p>{{ selectedItem.id }}'nin durumu: {{ selectedItem.status }}</p>
+        <p>{{ selectedItem.id }}'nin durumu: {{ selectedItem.status }}</p>
+        <p>{{ selectedItem.id }}'nin durumu: {{ selectedItem.status }}</p>
+        <p>{{ selectedItem.id }}'nin durumu: {{ selectedItem.status }}</p>
+        <p>{{ selectedItem.id }}'nin durumu: {{ selectedItem.status }}</p>
+        <p>{{ selectedItem.id }}'nin durumu: {{ selectedItem.status }}</p>
+        <p>{{ selectedItem.id }}'nin durumu: {{ selectedItem.status }}</p>
+        <p>{{ selectedItem.id }}'nin durumu: {{ selectedItem.status }}</p>
+        <p>{{ selectedItem.id }}'nin durumu: {{ selectedItem.status }}</p>
     </div>
 </div>

@@ -1,3 +1,4 @@
+import { NgFor, NgIf } from '@angular/common';
 import { Component, WritableSignal, signal } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 import { ActivatedRoute, Router } from '@angular/router';
@@ -6,7 +7,7 @@ import { SlidesOutputData, OwlOptions, CarouselModule } from 'ngx-owl-carousel-o
 @Component({
   selector: 'app-sliderowl',
   standalone: true,
-  imports: [CarouselModule,MatIconModule],
+  imports: [CarouselModule,MatIconModule,NgIf,NgFor],
   templateUrl: './sliderowl.component.html',
   styleUrl: './sliderowl.component.css'
 })
@@ -39,7 +40,6 @@ export class SliderowlComponent {
   }
 
 
-
   robusto: [
     { img: "assets/kahve.jpg", title: 'Robusto Item 1', description: 'Sepete Ekle' },
     { img: "assets/kahve.jpg", title: 'Robusto Item 2', description: 'Sepete Ekle' },
@@ -52,22 +52,27 @@ export class SliderowlComponent {
   ]
 
   carouselData: WritableSignal<CarouselData[]> = signal([
-    { id: 'slide-1', text: 'Açıklama', img: "assets/slider/mirella1kg.jpg",subtext: 'Mirela ', price:'1000g', dataMerge: 2, width: 210, dotContent: 'text1',   description: 'metin'  },
-    { id: 'slide-2', text: 'Açıklama', img: "assets/slider/private1kg.jpg",subtext: 'Private ', price:'1000g', dataMerge: 2, width: 210, dotContent: 'text1',   description: 'metin'  },
-    { id: 'slide-3', text: 'Açıklama', img: "assets/slider/public1kg.jpg",subtext: 'Public ', price:'1000g', dataMerge: 2, width: 210, dotContent: 'text1',   description: 'metin'  },
-    { id: 'slide-4', text: 'Açıklama', img: "assets/slider/tangle1kg.jpg",subtext: 'Tangle ', price:'1000g', dataMerge: 2, width: 210, dotContent: 'text1',   description: 'metin'  },
-    { id: 'slide-5', text: 'Açıklama', img: "assets/slider/terra1kg.jpg",subtext: 'Terra', price:'1000g', dataMerge: 2, width: 210, dotContent: 'text1',   description: 'metin'  },
-    { id: 'slide-6', text: 'Açıklama', img: "assets/slider/mirella500gr.jpg",subtext: 'Mirela', price:'500g', dataMerge: 2, width: 210, dotContent: 'text1',   description: 'metin'  },
-    { id: 'slide-7', text: 'Açıklama', img: "assets/slider/private500gr.jpg",subtext: 'Private', price:'500g', dataMerge: 2, width: 210, dotContent: 'text1',   description: 'metin'  },
-    { id: 'slide-8', text: 'Açıklama', img: "assets/slider/public500gr.jpg",subtext: 'Public', price:'500g', dataMerge: 2, width: 210, dotContent: 'text1',   description: 'metin'  },
-    { id: 'slide-9', text: 'Açıklama', img: "assets/slider/tangle500gr.jpg",subtext: 'Tangle', price:'500g', dataMerge: 2, width: 210, dotContent: 'text1',   description: 'metin'  },
-    { id: 'slide-10', text: 'Açıklama', img: "assets/slider/terra500gr.jpg",subtext: 'Terra', price:'500g', dataMerge: 2, width: 210, dotContent: 'text1',   description: 'metin'  },
+    { id: 'slide-1', text: 'Açıklama', img: "assets/slider/mirella1kg.jpg",subtext: 'Mirela ', price:'1000g', dataMerge: 2, width: 210, dotContent: 'text1',   description: 'metin', status: false },
+    { id: 'slide-2', text: 'Açıklama', img: "assets/slider/private1kg.jpg",subtext: 'Private ', price:'1000g', dataMerge: 2, width: 210, dotContent: 'text1',   description: 'metin', status: false  },
+    { id: 'slide-3', text: 'Açıklama', img: "assets/slider/public1kg.jpg",subtext: 'Public ', price:'1000g', dataMerge: 2, width: 210, dotContent: 'text1',   description: 'metin', status: false  },
+    { id: 'slide-4', text: 'Açıklama', img: "assets/slider/tangle1kg.jpg",subtext: 'Tangle ', price:'1000g', dataMerge: 2, width: 210, dotContent: 'text1',   description: 'metin', status: false  },
+    { id: 'slide-5', text: 'Açıklama', img: "assets/slider/terra1kg.jpg",subtext: 'Terra', price:'1000g', dataMerge: 2, width: 210, dotContent: 'text1',   description: 'metin', status: false  },
+    { id: 'slide-6', text: 'Açıklama', img: "assets/slider/mirella500gr.jpg",subtext: 'Mirela', price:'500g', dataMerge: 2, width: 210, dotContent: 'text1',   description: 'metin', status: false  },
+    { id: 'slide-7', text: 'Açıklama', img: "assets/slider/private500gr.jpg",subtext: 'Private', price:'500g', dataMerge: 2, width: 210, dotContent: 'text1',   description: 'metin', status: false  },
+    { id: 'slide-8', text: 'Açıklama', img: "assets/slider/public500gr.jpg",subtext: 'Public', price:'500g', dataMerge: 2, width: 210, dotContent: 'text1',   description: 'metin', status: false  },
+    { id: 'slide-9', text: 'Açıklama', img: "assets/slider/tangle500gr.jpg",subtext: 'Tangle', price:'500g', dataMerge: 2, width: 210, dotContent: 'text1',   description: 'metin', status: false  },
+    { id: 'slide-10', text: 'Açıklama', img: "assets/slider/terra500gr.jpg",subtext: 'Terra', price:'500g', dataMerge: 2, width: 210, dotContent: 'text1',   description: 'metin', status: false  },
    
     // { id: 'slide-7', text: 'Slide 7', dotContent: 'text5'},
     // { id: 'slide-8', text: 'Slide 8', dotContent: 'text5'},
     // { id: 'slide-9', text: 'Slide 9', dotContent: 'text5'},
     // { id: 'slide-10', text: 'Slide 10', dotContent: 'text5'},
   ]);
+  selectedItem: any = null;
+  
+  togglePopup(item: any) {
+    item.status = !item.status; this.selectedItem = item.status ? item : null; }
+    closePopup() { if (this.selectedItem) { this.selectedItem.status = false; this.selectedItem = null; } }
 
   currentUrl: WritableSignal<string> = signal('');
   fragment: WritableSignal<string | null> = signal('');
@@ -127,14 +132,12 @@ export class SliderowlComponent {
   carouselChanged(evt: SlidesOutputData) {
     console.log(evt);
   }
-
-
-
-
+  
 }
 
+
 interface CarouselData {
-  id: string;
+  id: any;
   text: string;
   img:string;
   subtext:string;
@@ -145,5 +148,6 @@ interface CarouselData {
   dotContent?: string;
   src?: string;
   dataHash?: string;
+  status?:any;
 }
 
