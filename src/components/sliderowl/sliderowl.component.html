@@ -71,11 +71,11 @@
 <div *ngIf="selectedItem && selectedItem.status" class="popup " (click)="closePopup()">
     <div class="popup-content font-sans px-2  " (click)="$event.stopPropagation()">
         <span class="close " (click)="togglePopup(selectedItem)">&times;</span>
-        <div class="grid grid-cols-2 mt-7 ">
-            <div class="flex justify-center">
+        <div class="grid md:grid-cols-2 mt-7 ">
+            <div class="flex justify-center ">
                 <img [src]="selectedItem.img" class="w-full rounded-xl" alt="">
             </div>
-            <div class="ml-2">
+            <div class="ml-2 mt-2 md:mt-0">
                 <span class="text-[#ba9e64] text-[1.5rem]  block mb-2">{{selectedItem.baslik}} </span>
                 <span class="block mb-2 text-[#513826]">{{selectedItem.text}} </span>
                 <span class="block mb-2">{{selectedItem.description}} </span>
