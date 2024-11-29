@@ -99,16 +99,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1000; /* Z-index değeri ekleniyor */
+    z-index: 1000; 
   }
   
   .popup-content {
     position: relative;
-    background-color: white;
+    background-color: #F5F0EA;
     padding: 20px;
     border-radius: 5px;
     max-width: 600px;
-    width: 100%;
+    width: 90%;
   }
   
   .close {
@@ -116,6 +116,6 @@
     top: 10px;
     right: 10px;
     cursor: pointer;
-    font-size: 24px;
+    font-size: 42px;
   }
   
