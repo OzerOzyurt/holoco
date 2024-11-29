@@ -69,9 +69,9 @@
 </div> -->
 
 <div *ngIf="selectedItem && selectedItem.status" class="popup " (click)="closePopup()">
-    <div class="popup-content font-sans px-2  " (click)="$event.stopPropagation()">
+    <div class="popup-content font-sans " (click)="$event.stopPropagation()">
         <span class="close " (click)="togglePopup(selectedItem)">&times;</span>
-        <div class="grid md:grid-cols-2 mt-7 ">
+        <div class="grid md:grid-cols-2 ">
             <div class="flex justify-center ">
                 <img [src]="selectedItem.img" class="w-full rounded-xl" alt="">
             </div>

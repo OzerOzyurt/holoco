@@ -105,9 +105,9 @@
   .popup-content {
     position: relative;
     background-color: #F5F0EA;
-    padding: 20px;
+    padding: 1rem;
     border-radius: 5px;
-    max-width: 600px;
+    max-width: 50rem;
     width: 90%;
   }
   
