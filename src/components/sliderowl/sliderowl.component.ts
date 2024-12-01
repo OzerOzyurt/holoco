@@ -1,4 +1,4 @@
-import { NgFor, NgIf } from '@angular/common';
+import {  NgIf } from '@angular/common';
 import { Component, WritableSignal, signal } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 import { ActivatedRoute, Router } from '@angular/router';
@@ -7,7 +7,7 @@ import { SlidesOutputData, OwlOptions, CarouselModule } from 'ngx-owl-carousel-o
 @Component({
   selector: 'app-sliderowl',
   standalone: true,
-  imports: [CarouselModule,MatIconModule,NgIf,NgFor],
+  imports: [CarouselModule,MatIconModule,NgIf,],
   templateUrl: './sliderowl.component.html',
   styleUrl: './sliderowl.component.css'
 })
@@ -16,8 +16,8 @@ export class SliderowlComponent {
   customOptions: OwlOptions = {
     loop: true,
     mouseDrag: true,
-    touchDrag: false,
-    pullDrag: false,
+    touchDrag: true,
+    pullDrag: true,
     dots: false,
     navSpeed: 700,
     margin:20,
