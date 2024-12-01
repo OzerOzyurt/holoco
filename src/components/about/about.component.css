@@ -3,3 +3,12 @@
      color: #b89d64;
 }
 
+.arkaplan {
+     background-image: url("../../assets/clogo.png");
+     width: 100%;
+     height: auto;
+     background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
