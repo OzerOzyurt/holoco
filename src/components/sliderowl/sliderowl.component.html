@@ -14,13 +14,18 @@
                     <ng-template carouselSlide [id]="item.id" [width]="item.width" class="bg-white rounded-3xl">
                         <div
                             class="slider mx-auto flex justify-center items-center flex-col m-5 p-0 !pt-0 rounded-lg bg-white overflow-hidden">
-                            <img class="max-h-[20rem] md:max-h-[24.5rem]  p-0 cursor-pointer"
-                                (click)="togglePopup(item)" [src]="item.img" alt="{{ item.subtext }}">
-                            <span class="font-semibold mt-2 block text-lg text-[#513826]">{{item.subtext}}</span>
-                            <!-- <span class="font-light block mt-2 text-sm">{{item.subtext}}</span> -->
-                            <span class="price mt-4 font-extrabold text-2xl">{{item.price}}</span>
-                            <!-- <button class="satinalbutton"><mat-icon class="text-white">shopping_cart</mat-icon>
+                            <div class="w-full">
+                                <img class="max-h-[20rem] md:max-h-[24.5rem]  p-0 cursor-pointer"
+                                    (click)="togglePopup(item)" [src]="item.img" alt="{{ item.subtext }}">
+                                <span class="font-semibold mt-2 block text-lg text-[#513826]">{{item.subtext}}</span>
+                                <!-- <span class="font-light block mt-2 text-sm">{{item.subtext}}</span> -->
+                                <span class="price mt-4 font-extrabold text-2xl">{{item.price}}</span>
+                                <!-- <button class="satinalbutton"><mat-icon class="text-white">shopping_cart</mat-icon>
                                 {{item.description}}</button> -->
+                            </div>
+                            <div class="flex items-end justify-end w-full mt-8 mr-2">
+                                <button (click)="togglePopup(item)">Detay</button>
+                            </div>
                         </div>
                     </ng-template>
                     }
@@ -71,7 +76,7 @@
 <div *ngIf="selectedItem && selectedItem.status" class="popup " (click)="closePopup()">
     <div class="popup-content font-sans " (click)="$event.stopPropagation()">
         <span class="close " (click)="togglePopup(selectedItem)">&times;</span>
-        <div class="grid md:grid-cols-2 ">
+        <div class="grid md:grid-cols-2 mt-7 md:mt-0">
             <div class="flex justify-center ">
                 <img [src]="selectedItem.img" class="w-full rounded-xl" alt="">
             </div>
